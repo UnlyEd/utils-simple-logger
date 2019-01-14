@@ -27,10 +27,11 @@
     "eslint": "4.19.1",
     "eslint-config-airbnb-base": "13.1.0",
     "eslint-plugin-import": "2.14",
-    "jest": "21.2.1"
-  },
-  "dependencies": {
+    "jest": "21.2.1",
     "winston": "3.1.0"
+  },
+  "peerDependencies": {
+    "winston": ">= 2.4.x"
   },
   "engines": {
     "node": ">= 6.4.0"
