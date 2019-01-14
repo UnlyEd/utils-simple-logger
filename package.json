@@ -1,18 +1,18 @@
 {
-  "name": "unly-utils-simple-logger",
+  "name": "@unly/utils-simple-logger",
   "version": "1.0.0",
   "description": "Simple Logger",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/UnlyEd/unly-utils-simple-logger.git"
+    "url": "git+https://github.com/UnlyEd/utils-simple-logger.git"
   },
   "author": "unlyEd",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/UnlyEd/unly-utils-simple-logger/issues"
+    "url": "https://github.com/UnlyEd/utils-simple-logger/issues"
   },
-  "homepage": "https://github.com/UnlyEd/unly-utils-simple-logger",
+  "homepage": "https://github.com/UnlyEd/utils-simple-logger",
   "jest": {
     "verbose": true,
     "testEnvironment": "node"
@@ -31,7 +31,7 @@
     "winston": "3.1.0"
   },
   "peerDependencies": {
-    "winston": ">= 2.4.x"
+    "winston": ">= 3.x.x"
   },
   "engines": {
     "node": ">= 6.4.0"
