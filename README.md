@@ -1,13 +1,25 @@
-# unly-utils-simple-logger
+# Utils Simple Logger
 
 This project is a transversal project, which aims to gather and share different tools to improve the scalability between different projects
 
-Install:
+<!-- toc -->
+
+- [Getting started](#getting-started)
+- [API](#api)
+- [Contributing](#contributing)
+  * [Getting started](#getting-started-1)
+  * [Test](#test)
+  * [Releasing and publishing](#releasing-and-publishing)
+- [License](#license)
+
+<!-- tocstop -->
+
+## Getting started
 
 npm or yarn
 
 ```
-    npm install https://github.com/UnlyEd/unly-utils-simple-logger.git
+npm install @unly/utils-simple-logger
 ```
 
 Use:
@@ -16,34 +28,45 @@ Use:
 const logger = require('unly-utils-simple-logger');
 ```
 
-Library:
+## API
 
-|   | param(s)         |  |
-| :--------------- |:---------------:| :-----:|
-| createLogger |  object { label, level }       | Create a logger based on many default options |
-| logRequest  | req, label | log info |
+[API](./API.md)
 
-## Development
+---
 
-### Test
+## Contributing
 
-Run once:
+We gladly accept PRs, but please open an issue first so we can discuss it beforehand.
+
+### Getting started
+
 ```
-yarn run test:once
-```
+yarn start # Shortcut - Runs linter + build + tests in concurrent mode (watch mode)
 
-Watch:
-```
+OR run each process separately for finer control
+
+yarn lint
+yarn build
 yarn test
 ```
 
-Coverage:
-```
-yarn run test:coverage
-```
-
-### Lint
+### Test
 
 ```
-yarn run lint
+yarn test # Run all tests, interactive and watch mode
+yarn test:once
+yarn test:coverage
 ```
+
+### Releasing and publishing
+
+```
+yarn releaseAndPublish # Shortcut - Will prompt for bump version, commit, create git tag, push commit/tag and publish to NPM
+
+yarn release # Will prompt for bump version, commit, create git tag, push commit/tag
+npm publish # Will publish to NPM
+```
+
+## License
+
+MIT
