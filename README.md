@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/UnlyEd/utils-simple-logger.svg?branch=master)](https://travis-ci.com/UnlyEd/utils-simple-logger)
+
 # Utils Simple Logger
 
 This project is a transversal project, which aims to gather and share different tools to improve the scalability between different projects
@@ -25,7 +27,7 @@ npm install @unly/utils-simple-logger
 Use:
 
 ```
-const logger = require('unly-utils-simple-logger');
+const logger = require('@unly/utils-simple-logger');
 ```
 
 ## API
