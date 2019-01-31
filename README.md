@@ -28,7 +28,7 @@ npm install @unly/utils-simple-logger
 Use:
 
 ```
-const logger = require('unly-utils-simple-logger');
+const logger = require('@unly/utils-simple-logger');
 ```
 
 ## API
