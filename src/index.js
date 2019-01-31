@@ -1,7 +1,7 @@
-const { logRequest, createLogger } = require('./simpleLogger');
+import { logRequest, createLogger } from './simpleLogger';
 
 
-export default {
+export {
   logRequest,
   createLogger,
 };

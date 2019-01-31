@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.com/UnlyEd/utils-simple-logger.svg?branch=master)](https://travis-ci.com/UnlyEd/utils-simple-logger)
+[![Maintainability](https://api.codeclimate.com/v1/badges/72c72fc8ca87933827a3/maintainability)](https://codeclimate.com/github/UnlyEd/utils-simple-logger/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/72c72fc8ca87933827a3/test_coverage)](https://codeclimate.com/github/UnlyEd/utils-simple-logger/test_coverage)
 # Utils Simple Logger
 
 This project is a transversal project, which aims to gather and share different tools to improve the scalability between different projects
