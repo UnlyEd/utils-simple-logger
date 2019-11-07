@@ -4,7 +4,9 @@
 
 # Utils Simple Logger
 
-This project is a transversal project, which aims to gather and share different tools to improve the scalability between different projects
+Logger based on [Winston](https://github.com/winstonjs/winston) with sane default so that it only logs `error` in production and filter other logs, while keeping them all in non-production environments.
+
+Basically avoids to increase cost by logging too much stuff in production.
 
 <!-- toc -->
 
