@@ -1,5 +1,4 @@
-import { logRequest, createLogger } from './simpleLogger';
-
+import { createLogger, logRequest } from './simpleLogger';
 
 export {
   logRequest,

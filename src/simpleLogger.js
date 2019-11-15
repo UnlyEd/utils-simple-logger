@@ -5,7 +5,6 @@ const {
   combine, timestamp, printf, splat, colorize,
 } = format;
 
-
 export const myFormat = printf((info) => {
   let meta = '';
   if (info.meta) {
@@ -25,7 +24,7 @@ export const myFormat = printf((info) => {
  * @returns {winston.Logger}
  */
 export const createLogger = ({ label, defaultLevel }) => {
-  const isProd = process.env.NODE_ENV === 'production' ? 'error' : 'debug';
+  const isProd = (process.env.UNLY_SIMPLE_LOGGER_ENV || process.env.NODE_ENV) === 'production' ? 'error' : 'debug';
   const level = defaultLevel || isProd;
   return winston.createLogger({
     level,
