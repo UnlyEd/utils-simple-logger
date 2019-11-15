@@ -17,16 +17,19 @@ const watch = {
   include: 'src/**',
 };
 
-const filesConfiguration = (arrayOfFiles) => arrayOfFiles.map((filesName) => ({
-  input: `./src/${filesName}`,
-  output:
-    {
-      file: `./lib/${filesName}`,
-      format: 'cjs',
-      exports: 'named',
-    },
-  plugins,
-  watch,
-}));
+const filesConfiguration = (arrayOfFiles) => arrayOfFiles.map((file) => {
+  console.log(file)
+  return {
+    input: `./src/${file.name}`,
+    output:
+      {
+        file: `./lib/${file.name}`,
+        format: 'cjs',
+        exports: 'named',
+      },
+    plugins,
+    watch,
+  };
+});
 
 export default filesConfiguration(filesToKeep);
