@@ -14,7 +14,6 @@ global.console = {
   log: jest.fn(),
 };
 
-
 describe('simpleLogger', () => {
   test('logRequest must call console.log() one time', () => {
     logRequest(req, 'test');
