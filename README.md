@@ -6,6 +6,12 @@
 
 # Utils Simple Logger
 
+> # Deprecation notice: 
+> ## This project has been deprecated in favor of [`@unly/simple-logger`](https://github.com/UnlyEd/simple-logger) which is 1kB (instead of 40kB+) and doesn't rely on `winston`. 
+>  Overall, the new implementation is much better and uses TypeScript, and is compatible with the native `console` API. See [migration example](https://github.com/UnlyEd/next-right-now/pull/314).
+
+---
+
 Logger based on [Winston](https://github.com/winstonjs/winston) with sane default so that it only logs `error` in production and filter other logs, while keeping them all in non-production environments.
 
 Basically avoids to increase cost by logging too much stuff in production.
